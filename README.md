@@ -1,7 +1,7 @@
 
 # Low Level Design
 
-This repository contains Low Level Design of verious Systems-
+This repository contains Low Level Design of various Systems-
 
 1. Snake and Ladder
 ## Screenshots
