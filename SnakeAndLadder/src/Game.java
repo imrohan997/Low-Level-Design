@@ -30,12 +30,15 @@ public class Game {
 
             int diceCount = dice.rollDice();
 
+            //After rolling dice we get steps we need to move as diceCount.
             int newPosition = playerTurn.getCurrentPosition() + diceCount;
+            //We check if after moving diceCount number of steps, do we have Snake or Ladder at that position.
             newPosition = getJump(newPosition);
             playerTurn.setCurrentPosition(newPosition);
 
             System.out.println("Player turn is:" + playerTurn.getId() + " and Player new position is:" + newPosition);
 
+            // If position of player crosses length of board then that player will win.
             if(newPosition >= board.cells.length*board.cells.length) {
                 winner = playerTurn;
             }

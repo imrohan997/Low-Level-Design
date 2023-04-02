@@ -12,6 +12,8 @@ public class Dice {
     public int rollDice() {
         int sum = 0;
         int count = diceCount;
+
+        //Based on number of dices provided in a game we calculate moves to be moved.
         while (count-- > 0) {
             sum += ThreadLocalRandom.current().nextInt(min, max + 1);
         }
